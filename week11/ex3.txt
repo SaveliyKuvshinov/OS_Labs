@@ -1,0 +1,4 @@
+In UNIX system stdout stream is line-buffered, when assosiated with a terminal.
+By this reason, in first program buffer is copied to child's process, 
+but in second program buffer becomes empty, when accepts "\n" symbol,
+that is child's process buffer is also empty.
